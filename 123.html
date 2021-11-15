@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+</head>
+<body>
+	請輸入生日:<br>
+	<form>
+	月份:<input type="text" name="month" id="txtMonth"><br>
+	日期:<input type="text" name="date" id="txtDay"><input onclick="xingzuo" type="submit" name="填完送出">
+	</form>
+	<p id="pp"></p>
+
+</body><script>
+		var p = document.getElementById('pp');
+		console.log(p); 	 
+				function xingzuo() {
+
+		var start = 1901, date=document.getElementById('txtDay').value, month=document.getElementById('txtMonth').value;;
+		with (document.getElementById('pp')){
+		if (month == 1 && date >=20 || month == 2 && date <=18) {p.innerHTML += “水瓶座”;}
+		if (month == 1 && date > 31) {p.innerHTML += “Huh?”;}
+		if (month == 2 && date >=19 || month == 3 && date <=20) {p.innerHTML += “雙魚座”;}
+		if (month == 2 && date > 29) {p.innerHTML += “Say what?”;}
+		if (month == 3 && date >=21 || month == 4 && date <=19) {p.innerHTML += “白羊座”;}
+		if (month == 3 && date > 31) {p.innerHTML += “OK. Whatever.”;}
+		if (month == 4 && date >=20 || month == 5 && date <=20) {p.innerHTML += “金牛座”;}
+		if (month == 4 && date > 30) {p.innerHTML += “I’m soooo sorry!”;}
+		if (month == 5 && date >=21 || month == 6 && date <=21) {p.innerHTML += “雙子座”;}
+		if (month == 5 && date > 31) {p.innerHTML += “Umm … no.”;}
+		if (month == 6 && date >=22 || month == 7 && date <=22) {p.innerHTML += “巨蟹座”;}
+		if (month == 6 && date > 30) {p.innerHTML += “Sorry.”;}
+		if (month == 7 && date >=23 || month == 8 && date <=22) {p.innerHTML += “獅子座”;}
+		if (month == 7 && date > 31) {p.innerHTML += “Excuse me?”;}
+		if (month == 8 && date >=23 || month == 9 && date <=22) {p.innerHTML += “室女座”;}
+		if (month == 8 && date > 31) {p.innerHTML += “Yeah. Right.”;}
+		if (month == 9 && date >=23 || month == 10 && date <=22) {p.innerHTML += “天秤座”;}
+		if (month == 9 && date > 30) {p.innerHTML += “Try Again.”;}
+		if (month == 10 && date >=23 || month == 11 && date <=21) {p.innerHTML += “天蠍座”;}
+		if (month == 10 && date > 31) {p.innerHTML += “Forget it!”;}
+		if (month == 11 && date >=22 || month == 12 && date <=21) {p.innerHTML += “人馬座”;}
+		if (month == 11 && date > 30) {p.innerHTML += “Invalid Date”;}
+		if (month == 12 && date >=22 || month == 1 && date <=19) {p.innerHTML += “摩羯座”;}
+		if (month == 12 && date > 31) {p.innerHTML += “No way!”;}
+			}
+		}
+	</script>
+</html>
